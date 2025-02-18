@@ -98,3 +98,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     [1] => string(4) "kiwi"
   }
 }
+
+# Practice 2
+<?php
+// Step 1: Create an array of fruits
+$fruits = ['apple', 'banana', 'orange', 'grape', 'mango'];
+
+// Step 2: Start an ordered list
+echo "<ol>";
+
+// Step 3: Use a for loop to display each fruit
+for ($i = 0; $i < count($fruits); $i++) {
+    echo "<li>" . $fruits[$i] . "</li>";  // Display each fruit as a list item
+}
+
+// Step 4: End the ordered list
+echo "</ol>";
+?>
+output
+1. apple
+2. banana
+3. orange
+4. grape
+5. mango
