@@ -115,9 +115,49 @@ for ($i = 0; $i < count($fruits); $i++) {
 // Step 4: End the ordered list
 echo "</ol>";
 ?>
+
 output
 1. apple
 2. banana
 3. orange
 4. grape
 5. mango
+
+# Practice 3
+<?php
+// Step 1: Define the matrix
+$matrix = [
+    [12, 23, 34],
+    [45, 55, 62],
+    [71, 84, 90]
+];
+
+// Step 2: Initialize a counter for rows
+$row = 0;
+$totalRows = count($matrix);
+
+// Step 3: Use a while loop to iterate through rows
+while ($row < $totalRows) {
+    $col = 0;
+    $totalCols = count($matrix[$row]);
+
+    // Step 4: Use another while loop to iterate through columns
+    while ($col < $totalCols) {
+        if ($matrix[$row][$col] % 2 == 0) { // Check if the number is even
+            echo $matrix[$row][$col] . "<br>";  // Display the even number
+        }
+        $col++; // Move to the next column
+    }
+    $row++; // Move to the next row
+}
+?>
+
+output
+12, 23, 34
+45, 55, 62
+71, 84, 90
+12
+34
+62
+84
+90
