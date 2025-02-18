@@ -64,3 +64,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 7. $numbers = [10, 20, 30, 40, 50];
    echo $numbers[3] + $numbers[4];
+8. $color = array('red', 'green', 'blue');
