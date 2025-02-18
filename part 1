@@ -1,1 +1,65 @@
+1.Person Object
+(
+    [name] => Alice
+    [age] => 25
+)
 
+2.object(Person)#1 (2) {
+  ["name"]=> string(5) "Alice"
+  ["age"]=> int(25)
+}
+
+3.float(10.5)
+
+4. .
+
+5.$host = "localhost";
+echo $host;
+
+6. $pi = 3.1416;
+echo $pi;
+
+Practice 1.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Area Calculator</title>
+</head>
+<body>
+
+<h2>Calculate Triangle Area using Heron's Formula</h2>
+<form method="post">
+    Side A: <input type="number" step="0.01" name="a" required><br><br>
+    Side B: <input type="number" step="0.01" name="b" required><br><br>
+    Side C: <input type="number" step="0.01" name="c" required><br><br>
+    <input type="submit" name="calculate" value="Calculate Area">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get input values
+    $a = floatval($_POST['a']);
+    $b = floatval($_POST['b']);
+    $c = floatval($_POST['c']);
+
+    // Check if the sides can form a valid triangle
+    if ($a + $b > $c && $a + $c > $b && $b + $c > $a) {
+        // Calculate semi-perimeter (s)
+        $s = ($a + $b + $c) / 2;
+
+        // Calculate area using Heron's formula without sqrt()
+        $areaSquared = $s * ($s - $a) * ($s - $b) * ($s - $c);
+        $area = $areaSquared ** 0.5; // Square root using exponentiation
+
+        // Format the result to 2 decimal places
+        echo "<h3>Triangle Area: " . number_format($area, 2) . " square units</h3>";
+    } else {
+        echo "<h3 style='color:red;'>Invalid triangle! The sum of any two sides must be greater than the third side.</h3>";
+    }
+}
+?>
+
+</body>
+</html>
+
+7. 
