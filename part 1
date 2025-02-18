@@ -65,3 +65,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 7. $numbers = [10, 20, 30, 40, 50];
    echo $numbers[3] + $numbers[4];
 8. $color = array('red', 'green', 'blue');
+9. $person = array(
+    'first_name' => 'John',
+    'last_name' => 'Doe',
+    'age' => 30
+);
+
+10. $colors[2] = 'white';
+11. #FF0000
+12. 6
