@@ -76,3 +76,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 12. 6
 13. Maeve
 14. jane@gmail.com
+array(4) {
+  [0] =>
+  array(2) {
+    [0] => string(4) "kiwi"
+    [1] => string(5) "apple"
+  }
+  [1] =>
+  array(2) {
+    [0] => string(6) "banana"
+    [1] => string(6) "orange"
+  }
+  [2] =>
+  array(2) {
+    [0] => string(5) "grape"
+    [1] => string(5) "mango"
+  }
+  [3] =>
+  array(2) {
+    [0] => string(10) "raspberry"
+    [1] => string(4) "kiwi"
+  }
+}
