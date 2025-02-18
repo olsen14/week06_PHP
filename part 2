@@ -1,4 +1,4 @@
-practice 1
+# Practice Set 1
 <?php
 
 /**
@@ -70,3 +70,4 @@ Total price: $317
 Modified string: this is a poorly written program with little structure and readability.
 The number 42 is even.
 
+# Practice Set 2
