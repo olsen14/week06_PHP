@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 12. 6
 13. Maeve
 14. jane@gmail.com
-array(4) {
+15.array(4) {
   [0] =>
   array(2) {
     [0] => string(4) "kiwi"
